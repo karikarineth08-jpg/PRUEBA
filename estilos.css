@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Fondo animado */
+
+.fondo-animado{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at top left,#2563eb,transparent 40%),
+    radial-gradient(circle at bottom right,#9333ea,transparent 40%);
+    z-index:-1;
+    animation:mover 10s infinite alternate;
+}
+
+@keyframes mover{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.2);
+    }
+}
+
+header{
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h2{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.galeria{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    padding-bottom:50px;
+}
+
+.card{
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.card img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+.card:hover img{
+    transform:scale(1.1);
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.5);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.card:hover .overlay{
+    opacity:1;
+}
+
+.overlay a{
+    margin-top:15px;
+    padding:10px 20px;
+    background:#2563eb;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+}
+
+.estadisticas{
+    width:80%;
+    margin:50px auto;
+}
+
+.barra{
+    margin:25px 0;
+}
+
+.progreso{
+    height:25px;
+    border-radius:20px;
+    background:linear-gradient(90deg,#06b6d4,#3b82f6);
+    width:0;
+    transition:2s;
+}
+
+.futbol{
+    width:95%;
+}
+
+.basket{
+    width:85%;
+}
+
+.tenis{
+    width:75%;
+}
+
+.pagina-deporte{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    padding:50px 0;
+}
+
+.jugador{
+    background:rgba(255,255,255,0.05);
+    border-radius:20px;
+    overflow:hidden;
+    backdrop-filter:blur(10px);
+    transition:0.5s;
+}
+
+.jugador:hover{
+    transform:translateY(-10px);
+}
+
+.jugador img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+.jugador h2{
+    padding:15px;
+}
+
+.jugador p{
+    padding:0 15px 20px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero h2{
+        font-size:2rem;
+    }
+
+}
