@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Portafolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #8474;
+        }
+        h1 { text-align: center; color: #333; margin-bottom: 20px; }
+        
+        /* Estilos para las líneas de texto */
+        .intro-text {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .proyecto { text-align: center; overflow: hidden; }
+        h2 { color: #555; font-size: 1.2em; }
+        
+        /* Efecto de zoom */
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mi Portafolio Tae 3</h1>
+
+    <!-- Aquí tienes tus 3 líneas para escribir -->
+    <div class="intro-text">
+        <p>En este apartado se muestran fotografias de trabajos hechos durante el primer semestre de la TAE de fotografia</p>
+          <p>en donde se abordaron los temas de la historia de la camara,fotos en bulbo, o fotografias en punto y linea</p>
+               <p>asi como fotografias con simulador, perspectiva forzada, vectores, inicio de photoshop etc.</p>
+    </div>
+
+    
+    <div class="grid-container">
+        <div class="proyecto">
+            <h2>DAGUERROTIPO</h2>
+            <img src="dague.jpg" alt="Proyecto 1">
+        </div>
+        <div class="proyecto">
+            <h2>SIMULADOR</h2>
+            <img src="niña.jpg" alt="Proyecto 2">
+        </div>
+        <div class="proyecto">
+            <h2>SIMULADOR</h2>
+            <img src="helicoptero.jpg" alt="Proyecto 3">
+        </div>
+        <div class="proyecto">
+            <h2>BULBO</h2>
+            <img src="IMG-20241002-WA0004.jpg" alt="Proyecto 4">
+        </div>
+        <div class="proyecto">
+            <h2>PHOTOSHOP</h2>
+            <img src="mundooooooo.jpg" alt="Proyecto 5">
+        </div>
+        <div class="proyecto">
+            <h2>FIRMA EN CAMARA</h2>
+            <img src="FIRMA.jpg" alt="Proyecto 6">
+        </div>
+        <div class="proyecto">
+            <h2>FOTO DE LINEA</h2>
+            <img src="reja azul.jpg" alt="Proyecto 7">
+        </div>
+        <div class="proyecto">
+            <h2>FOTO DE LINEA</h2>
+            <img src="colores.jpg" alt="Proyecto 8">
+        </div>
+        <div class="proyecto">
+            <h2>FOTO DE PUNTO</h2>
+            <img src="flor morada.jpg" alt="Proyecto 9">
+        </div>
+        <div class="proyecto">
+            <h2>FOTO DE CURVA</h2>
+            <img src="cafeteria.png" alt="Proyecto 10">
+        </div>
+    </div>
+
+</body>
+</html>
